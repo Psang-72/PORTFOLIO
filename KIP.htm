@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Portfolio</title>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .skills-container, .projects-container, .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .skill, .project, .social-icons a {
+            background: #fff;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            flex: 1 1 200px;
+            transition: transform 0.2s;
+        }
+        .skill:hover, .project:hover {
+            transform: scale(1.05);
+        }
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-icons a {
+            font-size: 2rem;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+        .btn {
+            display: inline-block;
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>KIPSANG GIDEON RONO</h1>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about" class="page">
+    <h2>About Me</h2>
+    <p>Hello! I'm a passionate developer with experience in web development and design. I love creating beautiful and functional websites.</p>
+</section>
+
+<section id="skills" class="page">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <h3>HTML</h3>
+            <p>Proficient in structuring web content.</p>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <p>Skilled in styling and responsive design.</p>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <p>Experienced in creating interactive web applications.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="page">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project">
+            <h3>Project One</h3>
+            <p>A personal portfolio website.</p>
+        </div>
+        <div class="project">
+            <h3>Project Two</h3>
+            <p>An e-commerce platform.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="page">
+    <h2>Contact</h2>
+    <p>Interested in working together or have questions? Reach out to me!</p>
+    <p>Email: <a href="mailto:psangrono72@gmail.com">psangrono72@gmail.com</a></p>
+    <p>Phone: +254700865231</p>
+    <a class="btn" href="mailto:psangrono72@gmail.com">Send Email</a>
+    <div class="social-icons">
+        <a href="https://facebook.com/GK_psang" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/Gk_psang" target="_blank" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
+        <a href="https://wa.me/254700865231" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://t.me/GK_psang" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+    </div>
+</section>
+
+</body>
+</html>
